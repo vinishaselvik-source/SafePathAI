@@ -1,0 +1,101 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function getUserData() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+
+    function hasRole(role) {
+      return isAuthenticated() && getUserData().role == role;
+    }
+
+    function isAdmin() {
+      return hasRole('admin');
+    }
+
+    function isResponder() {
+      return hasRole('responder') || isAdmin();
+    }
+
+    function isVolunteer() {
+      return hasRole('volunteer') || isResponder();
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Users collection:
+    // Only admins can change roles. Users can read their own profile.
+    match /users/{userId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated() && 
+                    request.resource.data.role in ['citizen', 'volunteer'] &&
+                    request.auth.uid == userId;
+      allow update: if isAdmin() || (isOwner(userId) && request.resource.data.role == resource.data.role);
+      allow delete: if isAdmin();
+    }
+
+    // Incidents (SOS):
+    // Citizens can create. Responders/Admins can update status. Anyone authenticated can read.
+    match /incidents/{incidentId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated();
+      allow update: if isResponder() || (isAuthenticated() && resource.data.userId == request.auth.uid);
+      allow delete: if isAdmin();
+    }
+
+    // Civic Reports (CityZen):
+    // Citizens can create. Responders/Admins can verify and update status.
+    match /civicReports/{reportId} {
+      allow read: if isAuthenticated();
+      allow create: if isAuthenticated();
+      allow update: if isResponder() || (isAuthenticated() && resource.data.userId == request.auth.uid);
+      allow delete: if isAdmin();
+    }
+
+    // Shelters:
+    // All authenticated users can view shelters. Responders/Admins can manage capacity.
+    match /shelters/{shelterId} {
+      allow read: if true;
+      allow write: if isResponder();
+    }
+
+    // Resources:
+    // Read by volunteers, responders, admins. Write only by responders & admins.
+    match /resources/{resourceId} {
+      allow read: if isVolunteer();
+      allow write: if isResponder();
+    }
+
+    // Disaster Preparedness Plans:
+    // Publicly readable for emergency safety guidance. Only admin can modify.
+    match /disasterPlans/{planId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Activity & Audit Logs:
+    // Only Responders and Admins can view activity logs.
+    match /activityLogs/{logId} {
+      allow read: if isResponder();
+      allow create: if isAuthenticated();
+      allow update, delete: if false; // Append-only audit trail
+    }
+
+    // Notifications:
+    // Users can read and acknowledge their own notifications.
+    match /notifications/{notificationId} {
+      allow read: if isAuthenticated();
+      allow create: if isResponder();
+      allow update: if isAuthenticated();
+      allow delete: if isAdmin();
+    }
+  }
+}

@@ -1,0 +1,1648 @@
+{
+  "users": [
+    {
+      "id": "usr-citizen-01",
+      "name": "Ananya Ramanathan",
+      "email": "ananya@saros.tn.gov.in",
+      "role": "volunteer",
+      "phone": "+91 98401 23456",
+      "ward": "Ward 177 - Velachery, Chennai",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Bhuvaneshwari Nagar, Velachery, Chennai"
+      },
+      "createdAt": "2026-10-10T08:00:00.000Z"
+    },
+    {
+      "id": "usr-volunteer-01",
+      "name": "Karthik Sivakumar",
+      "email": "karthik.vol@saros.tn.gov.in",
+      "role": "volunteer",
+      "phone": "+91 94440 98765",
+      "ward": "Ward 175 - Adyar Basin",
+      "agency": "Tamil Nadu Disaster Volunteer Force (TNDVF)",
+      "skills": [
+        "First Aid (CPR certified)",
+        "HAM Radio Operator (VU2TNR)",
+        "Swimmer/Rescue Boat Assistant"
+      ],
+      "createdAt": "2026-10-10T08:30:00.000Z"
+    },
+    {
+      "id": "usr-responder-01",
+      "name": "Commander R. Senthil Nathan",
+      "email": "senthil.ndrf@saros.tn.gov.in",
+      "role": "responder",
+      "phone": "+91 94421 11223",
+      "badgeNumber": "NDRF-4BN-882",
+      "agency": "4th Battalion NDRF Arakkonam / TN Fire & Rescue",
+      "ward": "Regional EOC Chennai South",
+      "createdAt": "2026-10-09T06:00:00.000Z"
+    },
+    {
+      "id": "usr-admin-01",
+      "name": "Dr. V. Rajeshwari IAS",
+      "email": "admin.disaster@saros.tn.gov.in",
+      "role": "admin",
+      "phone": "+91 94450 00112",
+      "badgeNumber": "IAS-TN-DIS-09",
+      "agency": "State Disaster Management Authority (TNSDMA)",
+      "ward": "State Emergency Operations Center (SEOC), Ezhilagam",
+      "createdAt": "2026-10-08T04:00:00.000Z"
+    }
+  ],
+  "incidents": [
+    {
+      "clientIncidentId": "SOS-CLIENT-1792069345745-PSQF",
+      "userId": "usr-citizen-01",
+      "userName": "Ananya Ramanathan (Citizen)",
+      "category": "FIRE",
+      "description": "hh",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Bhuvaneshwari Nagar, Velachery, Chennai",
+        "ward": "Ward 177"
+      },
+      "peopleCount": 2,
+      "priority": "HIGH",
+      "status": "SUBMITTED",
+      "submissionMethod": "ONLINE_DIRECT",
+      "meshHops": 0,
+      "id": "SOS-TN-1023",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T13:02:25.862Z",
+          "updatedBy": "Ananya Ramanathan (Citizen)",
+          "role": "citizen",
+          "note": "Incident registered via ONLINE_DIRECT"
+        }
+      ],
+      "createdAt": "2026-10-15T13:02:25.862Z",
+      "updatedAt": "2026-10-15T13:02:25.862Z"
+    },
+    {
+      "clientIncidentId": "SOS-CLIENT-1792068883389-ODSB",
+      "userId": "usr-citizen-01",
+      "userName": "Ananya Ramanathan (Citizen)",
+      "category": "FIRE",
+      "description": "bbb",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Bhuvaneshwari Nagar, Velachery, Chennai",
+        "ward": "Ward 177"
+      },
+      "peopleCount": 2,
+      "priority": "CRITICAL",
+      "status": "SUBMITTED",
+      "submissionMethod": "ONLINE_DIRECT",
+      "meshHops": 0,
+      "id": "SOS-TN-1022",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:54:43.472Z",
+          "updatedBy": "Ananya Ramanathan (Citizen)",
+          "role": "citizen",
+          "note": "Incident registered via ONLINE_DIRECT"
+        }
+      ],
+      "createdAt": "2026-10-15T12:54:43.472Z",
+      "updatedAt": "2026-10-15T12:54:43.472Z"
+    },
+    {
+      "clientIncidentId": "PKT-TN-MV9JBUYB",
+      "userId": "usr-citizen-01",
+      "userName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "category": "MEDICAL",
+      "description": "[Relayed via SAROS Mesh Network - 4 hops] Emergency rescue broadcast triggered from Citizen Phone (Velachery)",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Citizen Phone (Velachery) Mesh Geolocation"
+      },
+      "peopleCount": 2,
+      "priority": "CRITICAL",
+      "status": "SUBMITTED",
+      "submissionMethod": "MESH_RELAY",
+      "meshHops": 4,
+      "id": "SOS-TN-1021",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:48:44.157Z",
+          "updatedBy": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+          "role": "citizen",
+          "note": "Incident registered via MESH_RELAY"
+        }
+      ],
+      "createdAt": "2026-10-15T12:48:44.157Z",
+      "updatedAt": "2026-10-15T12:48:44.157Z"
+    },
+    {
+      "clientIncidentId": "PKT-TN-MV9JBUS5",
+      "userId": "usr-citizen-01",
+      "userName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "category": "MEDICAL",
+      "description": "[Relayed via SAROS Mesh Network - 4 hops] Emergency rescue broadcast triggered from Citizen Phone (Velachery)",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Citizen Phone (Velachery) Mesh Geolocation"
+      },
+      "peopleCount": 2,
+      "priority": "CRITICAL",
+      "status": "SUBMITTED",
+      "submissionMethod": "MESH_RELAY",
+      "meshHops": 4,
+      "id": "SOS-TN-1020",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:48:43.938Z",
+          "updatedBy": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+          "role": "citizen",
+          "note": "Incident registered via MESH_RELAY"
+        }
+      ],
+      "createdAt": "2026-10-15T12:48:43.938Z",
+      "updatedAt": "2026-10-15T12:48:43.938Z"
+    },
+    {
+      "clientIncidentId": "PKT-TN-MV9JBUMT",
+      "userId": "usr-citizen-01",
+      "userName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "category": "MEDICAL",
+      "description": "[Relayed via SAROS Mesh Network - 4 hops] Emergency rescue broadcast triggered from Citizen Phone (Velachery)",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Citizen Phone (Velachery) Mesh Geolocation"
+      },
+      "peopleCount": 2,
+      "priority": "CRITICAL",
+      "status": "SUBMITTED",
+      "submissionMethod": "MESH_RELAY",
+      "meshHops": 4,
+      "id": "SOS-TN-1019",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:48:43.745Z",
+          "updatedBy": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+          "role": "citizen",
+          "note": "Incident registered via MESH_RELAY"
+        }
+      ],
+      "createdAt": "2026-10-15T12:48:43.745Z",
+      "updatedAt": "2026-10-15T12:48:43.745Z"
+    },
+    {
+      "clientIncidentId": "PKT-TN-MV9JBU94",
+      "userId": "usr-citizen-01",
+      "userName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "category": "MEDICAL",
+      "description": "[Relayed via SAROS Mesh Network - 4 hops] Emergency rescue broadcast triggered from Citizen Phone (Velachery)",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Citizen Phone (Velachery) Mesh Geolocation"
+      },
+      "peopleCount": 2,
+      "priority": "CRITICAL",
+      "status": "SUBMITTED",
+      "submissionMethod": "MESH_RELAY",
+      "meshHops": 4,
+      "id": "SOS-TN-1018",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:48:43.252Z",
+          "updatedBy": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+          "role": "citizen",
+          "note": "Incident registered via MESH_RELAY"
+        }
+      ],
+      "createdAt": "2026-10-15T12:48:43.252Z",
+      "updatedAt": "2026-10-15T12:48:43.252Z"
+    },
+    {
+      "clientIncidentId": "PKT-TN-MV9JBTNY",
+      "userId": "usr-citizen-01",
+      "userName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "category": "MEDICAL",
+      "description": "[Relayed via SAROS Mesh Network - 4 hops] Emergency rescue broadcast triggered from Citizen Phone (Velachery)",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Citizen Phone (Velachery) Mesh Geolocation"
+      },
+      "peopleCount": 2,
+      "priority": "CRITICAL",
+      "status": "SUBMITTED",
+      "submissionMethod": "MESH_RELAY",
+      "meshHops": 4,
+      "id": "SOS-TN-1017",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:48:42.490Z",
+          "updatedBy": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+          "role": "citizen",
+          "note": "Incident registered via MESH_RELAY"
+        }
+      ],
+      "createdAt": "2026-10-15T12:48:42.490Z",
+      "updatedAt": "2026-10-15T12:48:42.490Z"
+    },
+    {
+      "clientIncidentId": "PKT-TN-MV9JBT4S",
+      "userId": "usr-citizen-01",
+      "userName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "category": "MEDICAL",
+      "description": "[Relayed via SAROS Mesh Network - 4 hops] Emergency rescue broadcast triggered from Citizen Phone (Velachery)",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Citizen Phone (Velachery) Mesh Geolocation"
+      },
+      "peopleCount": 2,
+      "priority": "CRITICAL",
+      "status": "SUBMITTED",
+      "submissionMethod": "MESH_RELAY",
+      "meshHops": 4,
+      "id": "SOS-TN-1016",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:48:41.801Z",
+          "updatedBy": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+          "role": "citizen",
+          "note": "Incident registered via MESH_RELAY"
+        }
+      ],
+      "createdAt": "2026-10-15T12:48:41.801Z",
+      "updatedAt": "2026-10-15T12:48:41.801Z"
+    },
+    {
+      "clientIncidentId": "PKT-TN-MV9JBSPX",
+      "userId": "usr-citizen-01",
+      "userName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "category": "MEDICAL",
+      "description": "[Relayed via SAROS Mesh Network - 4 hops] Emergency rescue broadcast triggered from Citizen Phone (Velachery)",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Citizen Phone (Velachery) Mesh Geolocation"
+      },
+      "peopleCount": 2,
+      "priority": "CRITICAL",
+      "status": "SUBMITTED",
+      "submissionMethod": "MESH_RELAY",
+      "meshHops": 4,
+      "id": "SOS-TN-1015",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:48:41.264Z",
+          "updatedBy": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+          "role": "citizen",
+          "note": "Incident registered via MESH_RELAY"
+        }
+      ],
+      "createdAt": "2026-10-15T12:48:41.264Z",
+      "updatedAt": "2026-10-15T12:48:41.264Z"
+    },
+    {
+      "clientIncidentId": "PKT-TN-MV9JBSB5",
+      "userId": "usr-citizen-01",
+      "userName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "category": "MEDICAL",
+      "description": "[Relayed via SAROS Mesh Network - 4 hops] Emergency rescue broadcast triggered from Citizen Phone (Velachery)",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Citizen Phone (Velachery) Mesh Geolocation"
+      },
+      "peopleCount": 2,
+      "priority": "CRITICAL",
+      "status": "SUBMITTED",
+      "submissionMethod": "MESH_RELAY",
+      "meshHops": 4,
+      "id": "SOS-TN-1014",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:48:40.734Z",
+          "updatedBy": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+          "role": "citizen",
+          "note": "Incident registered via MESH_RELAY"
+        }
+      ],
+      "createdAt": "2026-10-15T12:48:40.734Z",
+      "updatedAt": "2026-10-15T12:48:40.734Z"
+    },
+    {
+      "clientIncidentId": "PKT-TN-MV9JBRRM",
+      "userId": "usr-citizen-01",
+      "userName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "category": "MEDICAL",
+      "description": "[Relayed via SAROS Mesh Network - 4 hops] Emergency rescue broadcast triggered from Citizen Phone (Velachery)",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Citizen Phone (Velachery) Mesh Geolocation"
+      },
+      "peopleCount": 2,
+      "priority": "CRITICAL",
+      "status": "SUBMITTED",
+      "submissionMethod": "MESH_RELAY",
+      "meshHops": 4,
+      "id": "SOS-TN-1013",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:48:40.028Z",
+          "updatedBy": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+          "role": "citizen",
+          "note": "Incident registered via MESH_RELAY"
+        }
+      ],
+      "createdAt": "2026-10-15T12:48:40.028Z",
+      "updatedAt": "2026-10-15T12:48:40.028Z"
+    },
+    {
+      "clientIncidentId": "PKT-TN-MV9JBR51",
+      "userId": "usr-citizen-01",
+      "userName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "category": "MEDICAL",
+      "description": "[Relayed via SAROS Mesh Network - 4 hops] Emergency rescue broadcast triggered from Citizen Phone (Velachery)",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Citizen Phone (Velachery) Mesh Geolocation"
+      },
+      "peopleCount": 2,
+      "priority": "CRITICAL",
+      "status": "SUBMITTED",
+      "submissionMethod": "MESH_RELAY",
+      "meshHops": 4,
+      "id": "SOS-TN-1012",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:48:39.219Z",
+          "updatedBy": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+          "role": "citizen",
+          "note": "Incident registered via MESH_RELAY"
+        }
+      ],
+      "createdAt": "2026-10-15T12:48:39.219Z",
+      "updatedAt": "2026-10-15T12:48:39.219Z"
+    },
+    {
+      "clientIncidentId": "status-test-1792067871925",
+      "userId": "usr-cit-lifecycle",
+      "userName": "S. Raman",
+      "category": "TRAPPED",
+      "description": "Two elderly persons on first floor balcony",
+      "location": {
+        "lat": 12.2253,
+        "lng": 79.0747,
+        "address": "Vengikkal Ward 4"
+      },
+      "peopleCount": 2,
+      "priority": "CRITICAL",
+      "status": "RESOLVED",
+      "submissionMethod": "ONLINE_DIRECT",
+      "id": "SOS-TN-1011",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:37:51.925Z",
+          "updatedBy": "S. Raman",
+          "role": "citizen",
+          "note": "Incident registered via ONLINE_DIRECT"
+        },
+        {
+          "status": "ACKNOWLEDGED",
+          "timestamp": "2026-10-15T12:37:51.927Z",
+          "updatedBy": "Commander R. Senthil Nathan",
+          "role": "responder",
+          "note": "EOC received SOS, notifying district rescue boat squad."
+        },
+        {
+          "status": "ASSIGNED",
+          "timestamp": "2026-10-15T12:37:51.929Z",
+          "updatedBy": "Control Room EOC",
+          "role": "responder",
+          "note": "Assigned response to Karthik Sivakumar (volunteer)"
+        },
+        {
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-10-15T12:37:51.931Z",
+          "updatedBy": "Karthik Sivakumar",
+          "role": "volunteer",
+          "note": "Arrived on site with life jackets and first aid kit."
+        },
+        {
+          "status": "RESOLVED",
+          "timestamp": "2026-10-15T12:37:51.933Z",
+          "updatedBy": "Karthik Sivakumar",
+          "role": "volunteer",
+          "note": "Elderly persons safely relocated to Velachery Relief Center."
+        }
+      ],
+      "createdAt": "2026-10-15T12:37:51.925Z",
+      "updatedAt": "2026-10-15T12:37:51.933Z",
+      "responderNotes": [
+        {
+          "timestamp": "2026-10-15T12:37:51.927Z",
+          "responderName": "Commander R. Senthil Nathan",
+          "text": "EOC received SOS, notifying district rescue boat squad."
+        },
+        {
+          "timestamp": "2026-10-15T12:37:51.931Z",
+          "responderName": "Karthik Sivakumar",
+          "text": "Arrived on site with life jackets and first aid kit."
+        },
+        {
+          "timestamp": "2026-10-15T12:37:51.933Z",
+          "responderName": "Karthik Sivakumar",
+          "text": "Elderly persons safely relocated to Velachery Relief Center."
+        }
+      ],
+      "assignedTo": {
+        "id": "usr-vol-1",
+        "name": "Karthik Sivakumar",
+        "role": "volunteer",
+        "assignedAt": "2026-10-15T12:37:51.929Z"
+      }
+    },
+    {
+      "clientIncidentId": "idempotent-key-1792067871922",
+      "userId": "usr-citizen-test",
+      "userName": "Priya Narayanan",
+      "category": "MEDICAL",
+      "description": "Asthma patient needing nebulizer in flooded area",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Velachery Ward 177"
+      },
+      "peopleCount": 1,
+      "priority": "HIGH",
+      "status": "SUBMITTED",
+      "submissionMethod": "ONLINE_DIRECT",
+      "id": "SOS-TN-1010",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:37:51.922Z",
+          "updatedBy": "Priya Narayanan",
+          "role": "citizen",
+          "note": "Incident registered via ONLINE_DIRECT"
+        }
+      ],
+      "createdAt": "2026-10-15T12:37:51.922Z",
+      "updatedAt": "2026-10-15T12:37:51.922Z"
+    },
+    {
+      "clientIncidentId": "test-cid-1792067871916",
+      "userId": "usr-citizen-test",
+      "userName": "Priya Narayanan",
+      "category": "FLOOD",
+      "description": "Rising water in Velachery basement",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Velachery Basin, Chennai"
+      },
+      "peopleCount": 3,
+      "priority": "CRITICAL",
+      "status": "SUBMITTED",
+      "submissionMethod": "ONLINE_DIRECT",
+      "id": "SOS-TN-1009",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:37:51.917Z",
+          "updatedBy": "Priya Narayanan",
+          "role": "citizen",
+          "note": "Incident registered via ONLINE_DIRECT"
+        }
+      ],
+      "createdAt": "2026-10-15T12:37:51.917Z",
+      "updatedAt": "2026-10-15T12:37:51.917Z"
+    },
+    {
+      "clientIncidentId": "status-test-1792067121318",
+      "userId": "usr-cit-lifecycle",
+      "userName": "S. Raman",
+      "category": "TRAPPED",
+      "description": "Two elderly persons on first floor balcony",
+      "location": {
+        "lat": 12.2253,
+        "lng": 79.0747,
+        "address": "Vengikkal Ward 4"
+      },
+      "peopleCount": 2,
+      "priority": "CRITICAL",
+      "status": "RESOLVED",
+      "submissionMethod": "ONLINE_DIRECT",
+      "id": "SOS-TN-1008",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:25:21.318Z",
+          "updatedBy": "S. Raman",
+          "role": "citizen",
+          "note": "Incident registered via ONLINE_DIRECT"
+        },
+        {
+          "status": "ACKNOWLEDGED",
+          "timestamp": "2026-10-15T12:25:21.321Z",
+          "updatedBy": "Commander R. Senthil Nathan",
+          "role": "responder",
+          "note": "EOC received SOS, notifying district rescue boat squad."
+        },
+        {
+          "status": "ASSIGNED",
+          "timestamp": "2026-10-15T12:25:21.323Z",
+          "updatedBy": "Control Room EOC",
+          "role": "responder",
+          "note": "Assigned response to Karthik Sivakumar (volunteer)"
+        },
+        {
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-10-15T12:25:21.325Z",
+          "updatedBy": "Karthik Sivakumar",
+          "role": "volunteer",
+          "note": "Arrived on site with life jackets and first aid kit."
+        },
+        {
+          "status": "RESOLVED",
+          "timestamp": "2026-10-15T12:25:21.327Z",
+          "updatedBy": "Karthik Sivakumar",
+          "role": "volunteer",
+          "note": "Elderly persons safely relocated to Velachery Relief Center."
+        }
+      ],
+      "createdAt": "2026-10-15T12:25:21.318Z",
+      "updatedAt": "2026-10-15T12:25:21.327Z",
+      "responderNotes": [
+        {
+          "timestamp": "2026-10-15T12:25:21.321Z",
+          "responderName": "Commander R. Senthil Nathan",
+          "text": "EOC received SOS, notifying district rescue boat squad."
+        },
+        {
+          "timestamp": "2026-10-15T12:25:21.325Z",
+          "responderName": "Karthik Sivakumar",
+          "text": "Arrived on site with life jackets and first aid kit."
+        },
+        {
+          "timestamp": "2026-10-15T12:25:21.327Z",
+          "responderName": "Karthik Sivakumar",
+          "text": "Elderly persons safely relocated to Velachery Relief Center."
+        }
+      ],
+      "assignedTo": {
+        "id": "usr-vol-1",
+        "name": "Karthik Sivakumar",
+        "role": "volunteer",
+        "assignedAt": "2026-10-15T12:25:21.323Z"
+      }
+    },
+    {
+      "clientIncidentId": "idempotent-key-1792067121314",
+      "userId": "usr-citizen-test",
+      "userName": "Priya Narayanan",
+      "category": "MEDICAL",
+      "description": "Asthma patient needing nebulizer in flooded area",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Velachery Ward 177"
+      },
+      "peopleCount": 1,
+      "priority": "HIGH",
+      "status": "SUBMITTED",
+      "submissionMethod": "ONLINE_DIRECT",
+      "id": "SOS-TN-1007",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:25:21.314Z",
+          "updatedBy": "Priya Narayanan",
+          "role": "citizen",
+          "note": "Incident registered via ONLINE_DIRECT"
+        }
+      ],
+      "createdAt": "2026-10-15T12:25:21.314Z",
+      "updatedAt": "2026-10-15T12:25:21.314Z"
+    },
+    {
+      "clientIncidentId": "test-cid-1792067121308",
+      "userId": "usr-citizen-test",
+      "userName": "Priya Narayanan",
+      "category": "FLOOD",
+      "description": "Rising water in Velachery basement",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Velachery Basin, Chennai"
+      },
+      "peopleCount": 3,
+      "priority": "CRITICAL",
+      "status": "SUBMITTED",
+      "submissionMethod": "ONLINE_DIRECT",
+      "id": "SOS-TN-1006",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T12:25:21.308Z",
+          "updatedBy": "Priya Narayanan",
+          "role": "citizen",
+          "note": "Incident registered via ONLINE_DIRECT"
+        }
+      ],
+      "createdAt": "2026-10-15T12:25:21.308Z",
+      "updatedAt": "2026-10-15T12:25:21.308Z"
+    },
+    {
+      "id": "SOS-TN-1048",
+      "clientIncidentId": "cid-tn-1048-seed",
+      "userId": "usr-cit-1048",
+      "userName": "Meenakshi Sundaram",
+      "category": "MEDICAL",
+      "description": "Elderly cardiac patient requiring oxygen cylinder backup, floodwater entered ground floor.",
+      "location": {
+        "lat": 12.2253,
+        "lng": 79.0747,
+        "address": "Vengikkal Municipal Ward 4, Tiruvannamalai",
+        "ward": "Ward 4"
+      },
+      "peopleCount": 1,
+      "priority": "CRITICAL",
+      "status": "IN_PROGRESS",
+      "submissionMethod": "MESH_RELAY",
+      "meshHops": 4,
+      "assignedTo": {
+        "id": "usr-responder-01",
+        "name": "Commander R. Senthil Nathan (NDRF)",
+        "role": "responder",
+        "assignedAt": "2026-10-15T09:40:00.000Z"
+      },
+      "responderNotes": [
+        {
+          "timestamp": "2026-10-15T10:05:00.000Z",
+          "responderName": "Commander R. Senthil Nathan",
+          "text": "Ambulance team dispatched with portable oxygen unit via bypass route."
+        }
+      ],
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T09:30:00.000Z",
+          "updatedBy": "Meenakshi Sundaram",
+          "role": "citizen"
+        },
+        {
+          "status": "ACKNOWLEDGED",
+          "timestamp": "2026-10-15T09:35:00.000Z",
+          "updatedBy": "Control Room EOC",
+          "role": "responder"
+        },
+        {
+          "status": "ASSIGNED",
+          "timestamp": "2026-10-15T09:40:00.000Z",
+          "updatedBy": "Control Room EOC",
+          "role": "admin"
+        },
+        {
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-10-15T10:05:00.000Z",
+          "updatedBy": "Commander R. Senthil Nathan",
+          "role": "responder"
+        }
+      ],
+      "createdAt": "2026-10-15T09:30:00.000Z",
+      "updatedAt": "2026-10-15T10:05:00.000Z"
+    },
+    {
+      "id": "SOS-TN-1052",
+      "clientIncidentId": "cid-tn-1052-seed",
+      "userId": "usr-cit-1052",
+      "userName": "K. Murugan",
+      "category": "FOOD_WATER",
+      "description": "Hamlet surrounded by flash flood streams. 5 villagers including 2 children stranded on terrace without drinking water.",
+      "location": {
+        "lat": 12.5085,
+        "lng": 79.1234,
+        "address": "Polur Foothills Agricultural Hamlet",
+        "ward": "Polur Taluk"
+      },
+      "peopleCount": 5,
+      "priority": "HIGH",
+      "status": "ASSIGNED",
+      "submissionMethod": "MESH_RELAY",
+      "meshHops": 3,
+      "assignedTo": {
+        "id": "usr-volunteer-01",
+        "name": "Karthik Sivakumar (Volunteer TNDVF)",
+        "role": "volunteer",
+        "assignedAt": "2026-10-15T10:15:00.000Z"
+      },
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T09:55:00.000Z",
+          "updatedBy": "K. Murugan",
+          "role": "citizen"
+        },
+        {
+          "status": "ACKNOWLEDGED",
+          "timestamp": "2026-10-15T10:00:00.000Z",
+          "updatedBy": "Control Room",
+          "role": "responder"
+        },
+        {
+          "status": "ASSIGNED",
+          "timestamp": "2026-10-15T10:15:00.000Z",
+          "updatedBy": "Control Room",
+          "role": "admin"
+        }
+      ],
+      "createdAt": "2026-10-15T09:55:00.000Z",
+      "updatedAt": "2026-10-15T10:15:00.000Z"
+    },
+    {
+      "id": "SOS-TN-1056",
+      "clientIncidentId": "cid-tn-1056-seed",
+      "userId": "usr-cit-1056",
+      "userName": "G. Selvan",
+      "category": "FIRE",
+      "description": "Electrical transformer sparking and diesel generator leak near flooded canal bund.",
+      "location": {
+        "lat": 12.1812,
+        "lng": 78.9876,
+        "address": "Sathanur Dam Canal Outflow",
+        "ward": "Thandarampattu"
+      },
+      "peopleCount": 3,
+      "priority": "HIGH",
+      "status": "ACKNOWLEDGED",
+      "submissionMethod": "MESH_RELAY",
+      "meshHops": 2,
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T10:30:00.000Z",
+          "updatedBy": "G. Selvan",
+          "role": "citizen"
+        },
+        {
+          "status": "ACKNOWLEDGED",
+          "timestamp": "2026-10-15T10:35:00.000Z",
+          "updatedBy": "TNEB Emergency Desk",
+          "role": "responder"
+        }
+      ],
+      "createdAt": "2026-10-15T10:30:00.000Z",
+      "updatedAt": "2026-10-15T10:35:00.000Z"
+    },
+    {
+      "id": "SOS-TN-1060",
+      "clientIncidentId": "cid-tn-1060-seed",
+      "userId": "usr-cit-1060",
+      "userName": "P. Vijayalakshmi",
+      "category": "MEDICAL",
+      "description": "Vehicle trapped on inundated highway causeway. Single occupant with severe hypothermia.",
+      "location": {
+        "lat": 12.231,
+        "lng": 79.65,
+        "address": "Tindivanam Highway Causeway, NH 32",
+        "ward": "Tindivanam"
+      },
+      "peopleCount": 1,
+      "priority": "CRITICAL",
+      "status": "IN_PROGRESS",
+      "submissionMethod": "ONLINE_DIRECT",
+      "meshHops": 1,
+      "assignedTo": {
+        "id": "usr-responder-01",
+        "name": "Highway Patrol Rescue Unit #9",
+        "role": "responder",
+        "assignedAt": "2026-10-15T11:00:00.000Z"
+      },
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T10:50:00.000Z",
+          "updatedBy": "P. Vijayalakshmi",
+          "role": "citizen"
+        },
+        {
+          "status": "ACKNOWLEDGED",
+          "timestamp": "2026-10-15T10:52:00.000Z",
+          "updatedBy": "Control Room EOC",
+          "role": "responder"
+        },
+        {
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-10-15T11:00:00.000Z",
+          "updatedBy": "Highway Patrol Rescue Unit #9",
+          "role": "responder"
+        }
+      ],
+      "createdAt": "2026-10-15T10:50:00.000Z",
+      "updatedAt": "2026-10-15T11:00:00.000Z"
+    },
+    {
+      "id": "SOS-TN-1064",
+      "clientIncidentId": "cid-tn-1064-seed",
+      "userId": "usr-cit-1064",
+      "userName": "R. Balaji",
+      "category": "FLOOD",
+      "description": "Rapid water level rising inside apartment complex ground floor, 4 family members including an infant.",
+      "location": {
+        "lat": 12.9812,
+        "lng": 80.2185,
+        "address": "Ram Nagar South 3rd Cross, Velachery Basin, Chennai",
+        "ward": "Ward 177"
+      },
+      "peopleCount": 4,
+      "priority": "CRITICAL",
+      "status": "IN_PROGRESS",
+      "submissionMethod": "ONLINE_DIRECT",
+      "meshHops": 1,
+      "assignedTo": {
+        "id": "usr-responder-01",
+        "name": "Rescue Boat / Ambulance Unit TN-02",
+        "role": "responder",
+        "assignedAt": "2026-10-15T11:20:00.000Z"
+      },
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T11:10:00.000Z",
+          "updatedBy": "R. Balaji",
+          "role": "citizen"
+        },
+        {
+          "status": "ACKNOWLEDGED",
+          "timestamp": "2026-10-15T11:12:00.000Z",
+          "updatedBy": "EOC Velachery",
+          "role": "responder"
+        },
+        {
+          "status": "ASSIGNED",
+          "timestamp": "2026-10-15T11:20:00.000Z",
+          "updatedBy": "EOC Velachery",
+          "role": "responder"
+        },
+        {
+          "status": "IN_PROGRESS",
+          "timestamp": "2026-10-15T11:25:00.000Z",
+          "updatedBy": "Rescue Boat Team #2",
+          "role": "responder"
+        }
+      ],
+      "createdAt": "2026-10-15T11:10:00.000Z",
+      "updatedAt": "2026-10-15T11:25:00.000Z"
+    }
+  ],
+  "civicReports": [
+    {
+      "userId": "usr-cit-civic",
+      "userName": "Ananya Ramanathan",
+      "category": "BLOCKED_DRAIN",
+      "description": "Main canal culvert clogged with solid plastic waste",
+      "location": {
+        "lat": 12.9825,
+        "lng": 80.219,
+        "address": "Velachery 100ft Road"
+      },
+      "id": "CIV-TN-2006",
+      "status": "VERIFIED",
+      "createdAt": "2026-10-15T12:37:51.936Z",
+      "updatedAt": "2026-10-15T12:37:51.938Z",
+      "verificationNotes": "Field inspection confirmed 80% culvert blockage. JCB unit assigned.",
+      "assignedAgency": "Public Works Department (PWD)",
+      "verifiedBy": "AE R. Kumaran"
+    },
+    {
+      "userId": "usr-cit-civic",
+      "userName": "Ananya Ramanathan",
+      "category": "BLOCKED_DRAIN",
+      "description": "Main canal culvert clogged with solid plastic waste",
+      "location": {
+        "lat": 12.9825,
+        "lng": 80.219,
+        "address": "Velachery 100ft Road"
+      },
+      "id": "CIV-TN-2005",
+      "status": "VERIFIED",
+      "createdAt": "2026-10-15T12:25:21.331Z",
+      "updatedAt": "2026-10-15T12:25:21.333Z",
+      "verificationNotes": "Field inspection confirmed 80% culvert blockage. JCB unit assigned.",
+      "assignedAgency": "Public Works Department (PWD)",
+      "verifiedBy": "AE R. Kumaran"
+    },
+    {
+      "id": "CIV-TN-2041",
+      "userId": "usr-citizen-01",
+      "userName": "Ananya Ramanathan",
+      "category": "WATERLOGGING",
+      "description": "Knee-deep water stagnation blocking Velachery bypass service lane, causing traffic paralysis.",
+      "location": {
+        "lat": 12.9825,
+        "lng": 80.219,
+        "address": "Velachery Main Road Junction, Ward 177",
+        "ward": "Ward 177"
+      },
+      "status": "VERIFIED",
+      "verificationNotes": "Verified by Ward 177 sanitary inspector. Heavy suction pump positioned.",
+      "assignedAgency": "Greater Chennai Corporation (GCC)",
+      "verifiedBy": "Insp. M. Shanmugam",
+      "createdAt": "2026-10-15T08:15:00.000Z",
+      "updatedAt": "2026-10-15T09:00:00.000Z"
+    },
+    {
+      "id": "CIV-TN-2045",
+      "userId": "usr-cit-1052",
+      "userName": "D. Elango",
+      "category": "BLOCKED_DRAIN",
+      "description": "Stormwater culvert clogged with tree branches and plastic debris near storm drain channel #4.",
+      "location": {
+        "lat": 12.977,
+        "lng": 80.221,
+        "address": "Taramani Link Road Culvert, Velachery",
+        "ward": "Ward 177"
+      },
+      "status": "IN_PROGRESS",
+      "verificationNotes": "Excavator and JCB team deployed to clear culvert choke.",
+      "assignedAgency": "Public Works Department (PWD)",
+      "verifiedBy": "AE R. Kumaran",
+      "createdAt": "2026-10-15T08:45:00.000Z",
+      "updatedAt": "2026-10-15T09:30:00.000Z"
+    },
+    {
+      "id": "CIV-TN-2049",
+      "userId": "usr-volunteer-01",
+      "userName": "Karthik Sivakumar",
+      "category": "FALLEN_TREE",
+      "description": "Large banyan branch snapped across 11kV overhead electrical wire, high risk of electrocution.",
+      "location": {
+        "lat": 12.984,
+        "lng": 80.216,
+        "address": "Dhandeeswaram Main Road, Velachery",
+        "ward": "Ward 177"
+      },
+      "status": "REPORTED",
+      "assignedAgency": "TNEB & GCC Parks Wing",
+      "createdAt": "2026-10-15T10:10:00.000Z",
+      "updatedAt": "2026-10-15T10:10:00.000Z"
+    },
+    {
+      "id": "CIV-TN-2053",
+      "userId": "usr-cit-1056",
+      "userName": "S. Saravanan",
+      "category": "SLOPE_CRACK",
+      "description": "Visible 2-meter soil fissures along canal bund embankment; risk of bund collapse if water surges.",
+      "location": {
+        "lat": 12.185,
+        "lng": 78.991,
+        "address": "Sathanur Left Bank Bund, Tiruvannamalai",
+        "ward": "Thandarampattu"
+      },
+      "status": "VERIFIED",
+      "verificationNotes": "WRD engineers dispatched with sandbags and earthmovers to reinforce bund.",
+      "assignedAgency": "Water Resources Department (WRD)",
+      "verifiedBy": "EE K. Prabhakaran",
+      "createdAt": "2026-10-15T09:20:00.000Z",
+      "updatedAt": "2026-10-15T10:00:00.000Z"
+    }
+  ],
+  "shelters": [
+    {
+      "id": "SHELTER-TN-01",
+      "name": "Velachery Community Relief Center #4",
+      "location": {
+        "lat": 12.983,
+        "lng": 80.222,
+        "address": "Corporation Community Hall, Velachery Bypass Road, Chennai"
+      },
+      "capacity": 450,
+      "currentOccupancy": 210,
+      "status": "OPEN",
+      "facilities": [
+        "Medical Post",
+        "Clean RO Drinking Water",
+        "Community Kitchen",
+        "Diesel Generator Backup",
+        "Women & Child Safe Zone"
+      ],
+      "contactPhone": "+91 44 2244 5566",
+      "managerName": "Thiru M. Arumugam"
+    },
+    {
+      "id": "SHELTER-TN-02",
+      "name": "Tiruvannamalai District Relief Camp #1",
+      "location": {
+        "lat": 12.228,
+        "lng": 79.068,
+        "address": "Government Higher Secondary School Campus, Vengikkal"
+      },
+      "capacity": 600,
+      "currentOccupancy": 380,
+      "status": "OPEN",
+      "facilities": [
+        "Field Hospital (4 Doctors)",
+        "Purified Water Tanker",
+        "Dry Rations Store",
+        "Solar Emergency Lighting"
+      ],
+      "contactPhone": "+91 4175 233445",
+      "managerName": "Dr. C. Shanthi"
+    },
+    {
+      "id": "SHELTER-TN-03",
+      "name": "Polur Taluk Cyclone & Flood Evacuation Center",
+      "location": {
+        "lat": 12.51,
+        "lng": 79.13,
+        "address": "Taluk Office Multipurpose Cyclone Shelter, Polur"
+      },
+      "capacity": 300,
+      "currentOccupancy": 95,
+      "status": "OPEN",
+      "facilities": [
+        "Shelter Hall",
+        "Paramedic Desk",
+        "Inflatable Beds",
+        "Ham Radio Station VU2POL"
+      ],
+      "contactPhone": "+91 4181 222333",
+      "managerName": "Thiru S. Balamurugan"
+    },
+    {
+      "id": "SHELTER-TN-04",
+      "name": "Tindivanam Highway Transit Relief Center",
+      "location": {
+        "lat": 12.235,
+        "lng": 79.645,
+        "address": "Municipal Town Hall, NH 32 Junction, Tindivanam"
+      },
+      "capacity": 250,
+      "currentOccupancy": 240,
+      "status": "FULL",
+      "facilities": [
+        "Emergency Dormitory",
+        "First Aid Station",
+        "Transit Food Packets"
+      ],
+      "contactPhone": "+91 4147 224488",
+      "managerName": "Thiru K. Natarajan"
+    }
+  ],
+  "resources": [
+    {
+      "id": "RES-TN-01",
+      "name": "FRP Motorized Rescue Boats (40HP Yamaha)",
+      "category": "RESCUE_VEHICLE",
+      "totalQuantity": 12,
+      "availableQuantity": 4,
+      "deployedQuantity": 8,
+      "baseLocation": "NDRF Base Arakkonam / Velachery EOC Staging",
+      "status": "DEPLOYED"
+    },
+    {
+      "id": "RES-TN-02",
+      "name": "High-Capacity Mobile De-watering Pumps (100 HP)",
+      "category": "GENERATOR",
+      "totalQuantity": 25,
+      "availableQuantity": 9,
+      "deployedQuantity": 16,
+      "baseLocation": "GCC Ripon Building Yard / Velachery Lake Outflow",
+      "status": "DEPLOYED"
+    },
+    {
+      "id": "RES-TN-03",
+      "name": "Trauma & Paramedic Emergency Kits",
+      "category": "MEDICAL_KIT",
+      "totalQuantity": 80,
+      "availableQuantity": 34,
+      "deployedQuantity": 46,
+      "baseLocation": "Government Royapettah Hospital & District HQ",
+      "status": "READY"
+    },
+    {
+      "id": "RES-TN-04",
+      "name": "Emergency Ready-to-Eat Food & Water Packs (Family/3-day)",
+      "category": "FOOD_RATION",
+      "totalQuantity": 5000,
+      "availableQuantity": 2850,
+      "deployedQuantity": 2150,
+      "baseLocation": "Civil Supplies Godown, Chromepet & Vengikkal",
+      "status": "READY"
+    },
+    {
+      "id": "RES-TN-05",
+      "name": "Solar-Diesel Hybrid Silent Generators (15 kVA)",
+      "category": "GENERATOR",
+      "totalQuantity": 18,
+      "availableQuantity": 6,
+      "deployedQuantity": 12,
+      "baseLocation": "District Collectorate Compound",
+      "status": "DEPLOYED"
+    }
+  ],
+  "disasterPlans": [
+    {
+      "id": "PLAN-TN-FLOOD",
+      "hazardType": "FLOOD",
+      "title": "Tamil Nadu Standard Operating Procedure: Urban Inundation & Riverine Floods",
+      "alertLevel": "WARNING",
+      "summary": "Standard emergency protocols during severe depression, monsoon surge, or dam water releases.",
+      "safetyChecklist": [
+        "Turn off ground mains electricity switches and gas cylinders immediately before water enters the house.",
+        "Relocate elderly individuals, infants, and medical patients to the first floor or nearest shelter before roads submerge.",
+        "Charge mobile phones and power banks to 100%; store essential documents in watertight zip-lock pouches.",
+        "Boil all municipal/tanker water for at least 10 minutes before consumption to prevent water-borne disease.",
+        "Keep away from downed electric poles, flooded culverts, and fast-flowing open storm channels."
+      ],
+      "evacuationRoutes": [
+        "Velachery Bypass -> Inner Ring Road Elevated Expressway -> St. Thomas Mount High Grounds",
+        "Vengikkal Ward 4 -> Collectorate Bypass -> District Sports Stadium Relief Hub",
+        "Polur Foothills -> SH-9 High Ridge Road -> Multipurpose Cyclone Shelter"
+      ],
+      "emergencyContacts": [
+        {
+          "agency": "Disaster Management Toll Free",
+          "phone": "1070 / 1077"
+        },
+        {
+          "agency": "State Emergency Response (Police / Fire / Ambulance)",
+          "phone": "112"
+        },
+        {
+          "agency": "Greater Chennai Corporation Flood Helpline",
+          "phone": "1913"
+        },
+        {
+          "agency": "NDRF 24x7 Control Room (Arakkonam)",
+          "phone": "04177 246594"
+        },
+        {
+          "agency": "Electricity Breakdown (TANGEDCO Minnagam)",
+          "phone": "94987 94987"
+        }
+      ],
+      "lastUpdated": "2026-10-15T06:00:00.000Z"
+    },
+    {
+      "id": "PLAN-TN-CYCLONE",
+      "hazardType": "CYCLONE",
+      "title": "Cyclone Preparedness & High-Wind Shelter Advisory",
+      "alertLevel": "WATCH",
+      "summary": "Protective measures against gale winds exceeding 90 km/h, storm surges, and falling trees.",
+      "safetyChecklist": [
+        "Board up or tape large glass windows in criss-cross pattern to prevent fragmentation.",
+        "Secure loose rooftop objects, tin sheets, solar water heater panels, and satellite dishes.",
+        "Do not venture outside during the eye of the cyclone; the calm is temporary and destructive winds will reverse.",
+        "Avoid parking four-wheelers beneath old trees or billboard hoardings."
+      ],
+      "evacuationRoutes": [
+        "Coastal Zone A (Within 500m of shoreline) -> Designated Cyclone Centers inland"
+      ],
+      "emergencyContacts": [
+        {
+          "agency": "Fisheries Emergency Cell",
+          "phone": "044 2433 6311"
+        },
+        {
+          "agency": "Coast Guard Maritime Rescue Co-ordination",
+          "phone": "1554"
+        }
+      ],
+      "lastUpdated": "2026-10-14T12:00:00.000Z"
+    },
+    {
+      "id": "PLAN-TN-EARTHQUAKE",
+      "hazardType": "EARTHQUAKE",
+      "title": "Seismic Safety: Drop, Cover, and Hold On Protocol",
+      "alertLevel": "NORMAL",
+      "summary": "Procedures for tremor response, post-shock structural checks, and safe assembly points.",
+      "safetyChecklist": [
+        "DROP down onto your hands and knees immediately when shaking starts.",
+        "COVER your head and neck under a sturdy table or desk.",
+        "HOLD ON to your shelter until shaking stops completely.",
+        "Do not use elevators; use stairwells after tremors cease and check for gas leaks before turning on lights."
+      ],
+      "evacuationRoutes": [
+        "Open Playgrounds, Public Parks, and Wide Road Junctions away from high-rise masonry"
+      ],
+      "emergencyContacts": [
+        {
+          "agency": "National Disaster Management Authority (NDMA)",
+          "phone": "011 26701728"
+        },
+        {
+          "agency": "State Seismic Cell",
+          "phone": "1070"
+        }
+      ],
+      "lastUpdated": "2026-10-12T10:00:00.000Z"
+    },
+    {
+      "id": "PLAN-TN-HEATWAVE",
+      "hazardType": "HEATWAVE",
+      "title": "Extreme Heatwave & Dehydration Action Protocol",
+      "alertLevel": "NORMAL",
+      "summary": "Advisory for wet-bulb temperatures and heat index over 42°C.",
+      "safetyChecklist": [
+        "Avoid direct outdoor sun exposure between 11:00 AM and 3:30 PM.",
+        "Drink ORS, coconut water, lemon water, and buttermilk frequently even if not feeling thirsty.",
+        "Wear loose, light-colored cotton clothing and cover head with a damp cloth or umbrella.",
+        "Never leave children or elderly persons in parked vehicles."
+      ],
+      "evacuationRoutes": [
+        "Air-conditioned Public Transit Hubs, Cooling Shelters, and Shaded Primary Health Centers"
+      ],
+      "emergencyContacts": [
+        {
+          "agency": "108 Emergency Ambulance Heatstroke Wing",
+          "phone": "108"
+        }
+      ],
+      "lastUpdated": "2026-10-10T08:00:00.000Z"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "LOG-1792069345864",
+      "timestamp": "2026-10-15T13:02:25.862Z",
+      "action": "SOS_CREATED",
+      "actorName": "Ananya Ramanathan (Citizen)",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1023 (FIRE) reported at Bhuvaneshwari Nagar, Velachery, Chennai",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1023"
+    },
+    {
+      "id": "LOG-1792068883472",
+      "timestamp": "2026-10-15T12:54:43.472Z",
+      "action": "SOS_CREATED",
+      "actorName": "Ananya Ramanathan (Citizen)",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1022 (FIRE) reported at Bhuvaneshwari Nagar, Velachery, Chennai",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1022"
+    },
+    {
+      "id": "LOG-1792068524157",
+      "timestamp": "2026-10-15T12:48:44.157Z",
+      "action": "SOS_CREATED",
+      "actorName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1021 (MEDICAL) reported at Citizen Phone (Velachery) Mesh Geolocation",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1021"
+    },
+    {
+      "id": "LOG-1792068523938",
+      "timestamp": "2026-10-15T12:48:43.938Z",
+      "action": "SOS_CREATED",
+      "actorName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1020 (MEDICAL) reported at Citizen Phone (Velachery) Mesh Geolocation",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1020"
+    },
+    {
+      "id": "LOG-1792068523745",
+      "timestamp": "2026-10-15T12:48:43.745Z",
+      "action": "SOS_CREATED",
+      "actorName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1019 (MEDICAL) reported at Citizen Phone (Velachery) Mesh Geolocation",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1019"
+    },
+    {
+      "id": "LOG-1792068523252",
+      "timestamp": "2026-10-15T12:48:43.252Z",
+      "action": "SOS_CREATED",
+      "actorName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1018 (MEDICAL) reported at Citizen Phone (Velachery) Mesh Geolocation",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1018"
+    },
+    {
+      "id": "LOG-1792068522490",
+      "timestamp": "2026-10-15T12:48:42.490Z",
+      "action": "SOS_CREATED",
+      "actorName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1017 (MEDICAL) reported at Citizen Phone (Velachery) Mesh Geolocation",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1017"
+    },
+    {
+      "id": "LOG-1792068521801",
+      "timestamp": "2026-10-15T12:48:41.801Z",
+      "action": "SOS_CREATED",
+      "actorName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1016 (MEDICAL) reported at Citizen Phone (Velachery) Mesh Geolocation",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1016"
+    },
+    {
+      "id": "LOG-1792068521264",
+      "timestamp": "2026-10-15T12:48:41.264Z",
+      "action": "SOS_CREATED",
+      "actorName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1015 (MEDICAL) reported at Citizen Phone (Velachery) Mesh Geolocation",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1015"
+    },
+    {
+      "id": "LOG-1792068520734",
+      "timestamp": "2026-10-15T12:48:40.734Z",
+      "action": "SOS_CREATED",
+      "actorName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1014 (MEDICAL) reported at Citizen Phone (Velachery) Mesh Geolocation",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1014"
+    },
+    {
+      "id": "LOG-1792068520028",
+      "timestamp": "2026-10-15T12:48:40.028Z",
+      "action": "SOS_CREATED",
+      "actorName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1013 (MEDICAL) reported at Citizen Phone (Velachery) Mesh Geolocation",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1013"
+    },
+    {
+      "id": "LOG-1792068519219",
+      "timestamp": "2026-10-15T12:48:39.219Z",
+      "action": "SOS_CREATED",
+      "actorName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1012 (MEDICAL) reported at Citizen Phone (Velachery) Mesh Geolocation",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1012"
+    },
+    {
+      "id": "LOG-1792067871942",
+      "timestamp": "2026-10-15T12:37:51.942Z",
+      "action": "USER_ROLE_UPDATED",
+      "actorName": "Dr. V. Rajeshwari IAS",
+      "actorRole": "admin",
+      "details": "Updated role of Ananya Ramanathan (ananya@saros.tn.gov.in) to volunteer",
+      "entityType": "SYSTEM",
+      "entityId": "usr-citizen-01"
+    },
+    {
+      "id": "LOG-1792067871938",
+      "timestamp": "2026-10-15T12:37:51.938Z",
+      "action": "CIVIC_STATUS_VERIFIED",
+      "actorName": "AE R. Kumaran",
+      "actorRole": "responder",
+      "details": "Civic report CIV-TN-2006 marked VERIFIED. Agency: Public Works Department (PWD)",
+      "entityType": "CIVIC",
+      "entityId": "CIV-TN-2006"
+    },
+    {
+      "id": "LOG-1792067871936",
+      "timestamp": "2026-10-15T12:37:51.936Z",
+      "action": "CIVIC_REPORTED",
+      "actorName": "Ananya Ramanathan",
+      "actorRole": "citizen",
+      "details": "Civic issue CIV-TN-2006 (BLOCKED_DRAIN) submitted at Velachery 100ft Road",
+      "entityType": "CIVIC",
+      "entityId": "CIV-TN-2006"
+    },
+    {
+      "id": "LOG-1792067871933",
+      "timestamp": "2026-10-15T12:37:51.933Z",
+      "action": "INCIDENT_STATUS_RESOLVED",
+      "actorName": "Karthik Sivakumar",
+      "actorRole": "volunteer",
+      "details": "Incident SOS-TN-1011 status changed to RESOLVED. Note: Elderly persons safely relocated to Velachery Relief Center.",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1011"
+    },
+    {
+      "id": "LOG-1792067871931",
+      "timestamp": "2026-10-15T12:37:51.931Z",
+      "action": "INCIDENT_STATUS_IN_PROGRESS",
+      "actorName": "Karthik Sivakumar",
+      "actorRole": "volunteer",
+      "details": "Incident SOS-TN-1011 status changed to IN_PROGRESS. Note: Arrived on site with life jackets and first aid kit.",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1011"
+    },
+    {
+      "id": "LOG-1792067871930",
+      "timestamp": "2026-10-15T12:37:51.929Z",
+      "action": "INCIDENT_ASSIGNED",
+      "actorName": "Control Room EOC",
+      "actorRole": "responder",
+      "details": "Assigned SOS-TN-1011 to Karthik Sivakumar",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1011"
+    },
+    {
+      "id": "LOG-1792067871927",
+      "timestamp": "2026-10-15T12:37:51.927Z",
+      "action": "INCIDENT_STATUS_ACKNOWLEDGED",
+      "actorName": "Commander R. Senthil Nathan",
+      "actorRole": "responder",
+      "details": "Incident SOS-TN-1011 status changed to ACKNOWLEDGED. Note: EOC received SOS, notifying district rescue boat squad.",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1011"
+    },
+    {
+      "id": "LOG-1792067871925",
+      "timestamp": "2026-10-15T12:37:51.925Z",
+      "action": "SOS_CREATED",
+      "actorName": "S. Raman",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1011 (TRAPPED) reported at Vengikkal Ward 4",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1011"
+    },
+    {
+      "id": "LOG-1792067871922",
+      "timestamp": "2026-10-15T12:37:51.922Z",
+      "action": "SOS_CREATED",
+      "actorName": "Priya Narayanan",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1010 (MEDICAL) reported at Velachery Ward 177",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1010"
+    },
+    {
+      "id": "LOG-1792067871917",
+      "timestamp": "2026-10-15T12:37:51.917Z",
+      "action": "SOS_CREATED",
+      "actorName": "Priya Narayanan",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1009 (FLOOD) reported at Velachery Basin, Chennai",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1009"
+    },
+    {
+      "id": "LOG-1792067121337",
+      "timestamp": "2026-10-15T12:25:21.337Z",
+      "action": "USER_ROLE_UPDATED",
+      "actorName": "Dr. V. Rajeshwari IAS",
+      "actorRole": "admin",
+      "details": "Updated role of Ananya Ramanathan (ananya@saros.tn.gov.in) to volunteer",
+      "entityType": "SYSTEM",
+      "entityId": "usr-citizen-01"
+    },
+    {
+      "id": "LOG-1792067121333",
+      "timestamp": "2026-10-15T12:25:21.333Z",
+      "action": "CIVIC_STATUS_VERIFIED",
+      "actorName": "AE R. Kumaran",
+      "actorRole": "responder",
+      "details": "Civic report CIV-TN-2005 marked VERIFIED. Agency: Public Works Department (PWD)",
+      "entityType": "CIVIC",
+      "entityId": "CIV-TN-2005"
+    },
+    {
+      "id": "LOG-1792067121331",
+      "timestamp": "2026-10-15T12:25:21.331Z",
+      "action": "CIVIC_REPORTED",
+      "actorName": "Ananya Ramanathan",
+      "actorRole": "citizen",
+      "details": "Civic issue CIV-TN-2005 (BLOCKED_DRAIN) submitted at Velachery 100ft Road",
+      "entityType": "CIVIC",
+      "entityId": "CIV-TN-2005"
+    },
+    {
+      "id": "LOG-1792067121327",
+      "timestamp": "2026-10-15T12:25:21.327Z",
+      "action": "INCIDENT_STATUS_RESOLVED",
+      "actorName": "Karthik Sivakumar",
+      "actorRole": "volunteer",
+      "details": "Incident SOS-TN-1008 status changed to RESOLVED. Note: Elderly persons safely relocated to Velachery Relief Center.",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1008"
+    },
+    {
+      "id": "LOG-1792067121325",
+      "timestamp": "2026-10-15T12:25:21.325Z",
+      "action": "INCIDENT_STATUS_IN_PROGRESS",
+      "actorName": "Karthik Sivakumar",
+      "actorRole": "volunteer",
+      "details": "Incident SOS-TN-1008 status changed to IN_PROGRESS. Note: Arrived on site with life jackets and first aid kit.",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1008"
+    },
+    {
+      "id": "LOG-1792067121323",
+      "timestamp": "2026-10-15T12:25:21.323Z",
+      "action": "INCIDENT_ASSIGNED",
+      "actorName": "Control Room EOC",
+      "actorRole": "responder",
+      "details": "Assigned SOS-TN-1008 to Karthik Sivakumar",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1008"
+    },
+    {
+      "id": "LOG-1792067121321",
+      "timestamp": "2026-10-15T12:25:21.321Z",
+      "action": "INCIDENT_STATUS_ACKNOWLEDGED",
+      "actorName": "Commander R. Senthil Nathan",
+      "actorRole": "responder",
+      "details": "Incident SOS-TN-1008 status changed to ACKNOWLEDGED. Note: EOC received SOS, notifying district rescue boat squad.",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1008"
+    },
+    {
+      "id": "LOG-1792067121319",
+      "timestamp": "2026-10-15T12:25:21.318Z",
+      "action": "SOS_CREATED",
+      "actorName": "S. Raman",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1008 (TRAPPED) reported at Vengikkal Ward 4",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1008"
+    },
+    {
+      "id": "LOG-1792067121315",
+      "timestamp": "2026-10-15T12:25:21.314Z",
+      "action": "SOS_CREATED",
+      "actorName": "Priya Narayanan",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1007 (MEDICAL) reported at Velachery Ward 177",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1007"
+    },
+    {
+      "id": "LOG-1792067121308",
+      "timestamp": "2026-10-15T12:25:21.308Z",
+      "action": "SOS_CREATED",
+      "actorName": "Priya Narayanan",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1006 (FLOOD) reported at Velachery Basin, Chennai",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1006"
+    },
+    {
+      "id": "LOG-001",
+      "timestamp": "2026-10-15T09:35:00.000Z",
+      "action": "INCIDENT_ACKNOWLEDGED",
+      "actorName": "Control Room EOC",
+      "actorRole": "responder",
+      "details": "Acknowledged SOS-TN-1048 (Cardiac emergency in flooded zone)",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1048"
+    },
+    {
+      "id": "LOG-002",
+      "timestamp": "2026-10-15T09:40:00.000Z",
+      "action": "INCIDENT_ASSIGNED",
+      "actorName": "Control Room EOC",
+      "actorRole": "admin",
+      "details": "Assigned SOS-TN-1048 to Commander R. Senthil Nathan (NDRF 4BN)",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1048"
+    },
+    {
+      "id": "LOG-003",
+      "timestamp": "2026-10-15T10:00:00.000Z",
+      "action": "CIVIC_VERIFIED",
+      "actorName": "Insp. M. Shanmugam",
+      "actorRole": "responder",
+      "details": "Verified CIV-TN-2041 (Waterlogging on Velachery Bypass Service Lane)",
+      "entityType": "CIVIC",
+      "entityId": "CIV-TN-2041"
+    },
+    {
+      "id": "LOG-004",
+      "timestamp": "2026-10-15T11:20:00.000Z",
+      "action": "RESOURCE_DEPLOYED",
+      "actorName": "Commander R. Senthil Nathan",
+      "actorRole": "responder",
+      "details": "Dispatched 2 FRP motorized boats to Ward 177 Velachery Basin",
+      "entityType": "RESOURCE",
+      "entityId": "RES-TN-01"
+    }
+  ]
+}
