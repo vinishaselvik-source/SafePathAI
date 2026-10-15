@@ -1,0 +1,44 @@
+{
+  "name": "SAROS — Search and Rescue Operating System",
+  "short_name": "SAROS",
+  "description": "Offline-resilient disaster response, emergency SOS, and ad-hoc mesh communication platform.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0f19",
+  "theme_color": "#0b0f19",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/vite.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Send Rescue SOS",
+      "short_name": "SOS",
+      "description": "Trigger urgent life-threatening rescue alert",
+      "url": "/?action=sos"
+    },
+    {
+      "name": "Disaster Risk Map",
+      "short_name": "Risk Map",
+      "description": "View live incidents and shelters on GIS map",
+      "url": "/?tab=map"
+    },
+    {
+      "name": "CityZen Report",
+      "short_name": "CityZen",
+      "description": "Report blocked drains or waterlogging",
+      "url": "/?tab=cityzen"
+    }
+  ]
+}

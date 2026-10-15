@@ -10,6 +10,9 @@ import { PreparednessView } from './components/PreparednessView';
 import { AdminDashboard } from './components/AdminDashboard';
 import { VolunteerPortal } from './components/VolunteerPortal';
 import { DemoGuideModal } from './components/DemoGuideModal';
+import { MobileDeviceFrame } from './components/MobileDeviceFrame';
+import { BottomNav } from './components/BottomNav';
+import { ProfileModal } from './components/ProfileModal';
 import { UserRole, SupportedLanguage, Incident } from './types';
 import { offlineStore } from './services/offlineStore';
 import { api } from './services/api';
@@ -23,8 +26,11 @@ export function App() {
   const [activeTab, setActiveTab] = useState<string>('home');
   const [showSOSModal, setShowSOSModal] = useState<boolean>(false);
   const [showDemoGuide, setShowDemoGuide] = useState<boolean>(false);
+  const [showProfileModal, setShowProfileModal] = useState<boolean>(false);
+  const [isMobileSimulated, setIsMobileSimulated] = useState<boolean>(false);
   const [selectedIncidentForMap, setSelectedIncidentForMap] = useState<Incident | null>(null);
   const [offlineCount, setOfflineCount] = useState<number>(0);
+  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
 
   // Sync API session whenever currentRole changes
   useEffect(() => {
@@ -37,6 +43,29 @@ export function App() {
     const user = roleUsers[currentRole];
     api.setSession(currentRole, user.id, user.name);
   }, [currentRole]);
+
+  // Capture PWA installation prompt
+  useEffect(() => {
+    const handleBeforeInstall = (e: Event) => {
+      e.preventDefault();
+      setDeferredPrompt(e);
+    };
+    window.addEventListener('beforeinstallprompt', handleBeforeInstall);
+    return () => window.removeEventListener('beforeinstallprompt', handleBeforeInstall);
+  }, []);
+
+  const handleInstallApp = async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const choiceResult = await deferredPrompt.userChoice;
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User installed SAROS as PWA');
+      }
+      setDeferredPrompt(null);
+    } else {
+      alert('To install SAROS on your phone: Tap your browser share or menu button (⋮ or ⬆) and select "Add to Home Screen".');
+    }
+  };
 
   // Monitor offline store state & queue count
   const refreshNetworkState = async () => {
@@ -63,8 +92,16 @@ export function App() {
     setActiveTab('map');
   };
 
-  return (
-    <div className="min-h-screen bg-[#0b0f19] text-slate-100 flex flex-col font-sans selection:bg-rose-500 selection:text-white">
+  const handleMobileNavTab = (tab: string) => {
+    if (tab === 'profile') {
+      setShowProfileModal(true);
+    } else {
+      setActiveTab(tab);
+    }
+  };
+
+  const appContent = (
+    <div className="min-h-screen bg-[#0b0f19] text-slate-100 flex flex-col font-sans selection:bg-rose-500 selection:text-white pb-16 sm:pb-0">
       {/* Top Navbar */}
       <Navbar
         currentRole={currentRole}
@@ -77,6 +114,9 @@ export function App() {
         onOpenDemoGuide={() => setShowDemoGuide(true)}
         activeTab={activeTab}
         onSelectTab={setActiveTab}
+        isMobileSimulated={isMobileSimulated}
+        onToggleMobileSimulated={() => setIsMobileSimulated(!isMobileSimulated)}
+        onInstallApp={handleInstallApp}
       />
 
       {/* Persistent Offline Alert Bar (if disconnected or simulating) */}
@@ -85,7 +125,7 @@ export function App() {
           <div className="flex items-center gap-2 max-w-4xl">
             <WifiOff className="w-4 h-4 text-amber-400 flex-shrink-0 animate-pulse" />
             <span>
-              <strong>OFFLINE MODE ACTIVE:</strong> No direct cellular / internet uplink. Emergency reports will be persisted in device IndexedDB and forwarded via ad-hoc SAROS mesh relays until an EOC gateway is reached.
+              <strong>OFFLINE MODE ACTIVE:</strong> Emergency reports will be persisted in device IndexedDB and forwarded via ad-hoc SAROS mesh relays until an EOC gateway is reached.
             </span>
           </div>
           {offlineCount > 0 && (
@@ -142,13 +182,13 @@ export function App() {
       </main>
 
       {/* Footer with RMKCET CSE PDL-III accreditation */}
-      <footer className="bg-slate-950 border-t border-slate-900 py-6 px-4 text-xs text-slate-400">
+      <footer className="bg-slate-950 border-t border-slate-900 py-6 px-4 text-xs text-slate-400 hidden sm:block">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="space-y-1 text-center sm:text-left">
             <div className="flex items-center justify-center sm:justify-start gap-2">
               <span className="font-bold text-slate-200">SAROS</span>
               <span>— Search and Rescue Operating System</span>
-              <span className="px-1.5 py-0.5 rounded text-[10px] bg-slate-900 text-teal-400 border border-slate-800">v1.0.0</span>
+              <span className="px-1.5 py-0.5 rounded text-[10px] bg-slate-900 text-teal-400 border border-slate-800">Mobile PWA Ready</span>
             </div>
             <p className="text-[11px] text-slate-400">
               Department of Computer Science and Engineering · R.M.K. College of Engineering and Technology
@@ -166,19 +206,29 @@ export function App() {
               Demonstration Guide
             </button>
             <span className="text-slate-700">|</span>
-            <span className="text-slate-400">Student Prototype System</span>
+            <button
+              onClick={handleInstallApp}
+              className="text-emerald-400 hover:text-emerald-300 font-semibold"
+            >
+              Install App
+            </button>
           </div>
         </div>
       </footer>
+
+      {/* Native Mobile Bottom Navigation Bar (Figure 3.1) */}
+      <BottomNav
+        activeTab={activeTab}
+        onSelectTab={handleMobileNavTab}
+        language={language}
+      />
 
       {/* Emergency SOS Modal */}
       <SOSModal
         isOpen={showSOSModal}
         onClose={() => setShowSOSModal(false)}
         language={language}
-        onIncidentCreated={() => {
-          // If on map or triage, refresh
-        }}
+        onIncidentCreated={() => {}}
       />
 
       {/* Master Demo Guide Modal */}
@@ -186,7 +236,32 @@ export function App() {
         isOpen={showDemoGuide}
         onClose={() => setShowDemoGuide(false)}
       />
+
+      {/* Mobile Profile Modal */}
+      <ProfileModal
+        isOpen={showProfileModal}
+        onClose={() => setShowProfileModal(false)}
+        currentRole={currentRole}
+        onRoleChange={(r) => {
+          setCurrentRole(r);
+          setShowProfileModal(false);
+        }}
+        language={language}
+        onLanguageChange={setLanguage}
+        isSimulatedOffline={isSimulatedOffline}
+        onToggleOffline={handleToggleSimulatedOffline}
+        onOpenDemoGuide={() => setShowDemoGuide(true)}
+      />
     </div>
+  );
+
+  return (
+    <MobileDeviceFrame
+      isMobileSimulated={isMobileSimulated}
+      onToggleSimulator={() => setIsMobileSimulated(false)}
+    >
+      {appContent}
+    </MobileDeviceFrame>
   );
 }
 

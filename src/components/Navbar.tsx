@@ -1,7 +1,6 @@
-import React from 'react';
 import { 
   ShieldAlert, Radio, Wifi, WifiOff, Globe, 
-  BatteryCharging, MapPin, AlertTriangle, BookOpen, UserCircle 
+  BatteryCharging, MapPin, AlertTriangle, BookOpen, UserCircle, Download, Smartphone, Monitor 
 } from 'lucide-react';
 import { UserRole, SupportedLanguage } from '../types';
 import { TRANSLATIONS } from '../locales/translations';
@@ -17,6 +16,9 @@ interface NavbarProps {
   onOpenDemoGuide: () => void;
   activeTab: string;
   onSelectTab: (tab: string) => void;
+  isMobileSimulated?: boolean;
+  onToggleMobileSimulated?: () => void;
+  onInstallApp?: () => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -29,7 +31,10 @@ export const Navbar: React.FC<NavbarProps> = ({
   onLanguageChange,
   onOpenDemoGuide,
   activeTab,
-  onSelectTab
+  onSelectTab,
+  isMobileSimulated = false,
+  onToggleMobileSimulated,
+  onInstallApp
 }) => {
   const t = TRANSLATIONS[language];
 
@@ -124,6 +129,32 @@ export const Navbar: React.FC<NavbarProps> = ({
               <option value="hi" className="bg-slate-900">हिंदी</option>
             </select>
           </div>
+
+          {/* Install PWA App Button (Figure 3.1) */}
+          <button
+            onClick={onInstallApp}
+            className="hidden sm:flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-semibold bg-emerald-950/70 text-emerald-300 border border-emerald-700/60 hover:bg-emerald-900 transition-colors shadow-sm"
+            title="Install SAROS as native standalone PWA on Android, iOS, or Desktop"
+          >
+            <Download className="w-3.5 h-3.5" />
+            <span>{t.installApp}</span>
+          </button>
+
+          {/* Mobile / Desktop Simulator Toggle */}
+          {onToggleMobileSimulated && (
+            <button
+              onClick={onToggleMobileSimulated}
+              className={`hidden md:flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-medium border transition-colors ${
+                isMobileSimulated
+                  ? 'bg-rose-950 text-rose-300 border-rose-600'
+                  : 'bg-slate-900 text-slate-300 border-slate-800 hover:bg-slate-850'
+              }`}
+              title="Toggle mobile device frame"
+            >
+              {isMobileSimulated ? <Monitor className="w-3.5 h-3.5" /> : <Smartphone className="w-3.5 h-3.5" />}
+              <span>{isMobileSimulated ? 'Desktop' : 'Mobile View'}</span>
+            </button>
+          )}
 
           {/* Demo Guide */}
           <button

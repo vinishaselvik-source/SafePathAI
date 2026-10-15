@@ -54,6 +54,35 @@
   ],
   "incidents": [
     {
+      "clientIncidentId": "PKT-TN-MV9LI5VA",
+      "userId": "usr-citizen-01",
+      "userName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "category": "MEDICAL",
+      "description": "[Relayed via SAROS Mesh Network - 4 hops] Test emergency mesh broadcast packet",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Velachery Test Mesh"
+      },
+      "peopleCount": 1,
+      "priority": "CRITICAL",
+      "status": "SUBMITTED",
+      "submissionMethod": "MESH_RELAY",
+      "meshHops": 4,
+      "id": "SOS-TN-1024",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T13:49:37.841Z",
+          "updatedBy": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+          "role": "citizen",
+          "note": "Incident registered via MESH_RELAY"
+        }
+      ],
+      "createdAt": "2026-10-15T13:49:37.841Z",
+      "updatedAt": "2026-10-15T13:49:37.841Z"
+    },
+    {
       "clientIncidentId": "SOS-CLIENT-1792069345745-PSQF",
       "userId": "usr-citizen-01",
       "userName": "Ananya Ramanathan (Citizen)",
@@ -1284,6 +1313,16 @@
     }
   ],
   "activityLogs": [
+    {
+      "id": "LOG-1792072177841",
+      "timestamp": "2026-10-15T13:49:37.841Z",
+      "action": "SOS_CREATED",
+      "actorName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1024 (MEDICAL) reported at Velachery Test Mesh",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1024"
+    },
     {
       "id": "LOG-1792069345864",
       "timestamp": "2026-10-15T13:02:25.862Z",
