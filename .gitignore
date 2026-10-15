@@ -25,3 +25,5 @@ dist-ssr
 # Vercel & Gemini
 .vercel
 .gemini
+
+.vercel

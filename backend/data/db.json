@@ -54,6 +54,36 @@
   ],
   "incidents": [
     {
+      "clientIncidentId": "SOS-CLIENT-1792073390048-26OS",
+      "userId": "usr-citizen-01",
+      "userName": "Ananya Ramanathan (Citizen)",
+      "category": "FIRE",
+      "description": "rrr",
+      "location": {
+        "lat": 12.9815,
+        "lng": 80.218,
+        "address": "Bhuvaneshwari Nagar, Velachery, Chennai",
+        "ward": "Ward 177"
+      },
+      "peopleCount": 2,
+      "priority": "MEDIUM",
+      "status": "SUBMITTED",
+      "submissionMethod": "ONLINE_DIRECT",
+      "meshHops": 0,
+      "id": "SOS-TN-1025",
+      "statusHistory": [
+        {
+          "status": "SUBMITTED",
+          "timestamp": "2026-10-15T14:09:50.081Z",
+          "updatedBy": "Ananya Ramanathan (Citizen)",
+          "role": "citizen",
+          "note": "Incident registered via ONLINE_DIRECT"
+        }
+      ],
+      "createdAt": "2026-10-15T14:09:50.081Z",
+      "updatedAt": "2026-10-15T14:09:50.081Z"
+    },
+    {
       "clientIncidentId": "PKT-TN-MV9LI5VA",
       "userId": "usr-citizen-01",
       "userName": "Mesh Citizen (REDMI NOTE 12 (BLE 5.2))",
@@ -1313,6 +1343,16 @@
     }
   ],
   "activityLogs": [
+    {
+      "id": "LOG-1792073390081",
+      "timestamp": "2026-10-15T14:09:50.081Z",
+      "action": "SOS_CREATED",
+      "actorName": "Ananya Ramanathan (Citizen)",
+      "actorRole": "citizen",
+      "details": "New SOS SOS-TN-1025 (FIRE) reported at Bhuvaneshwari Nagar, Velachery, Chennai",
+      "entityType": "INCIDENT",
+      "entityId": "SOS-TN-1025"
+    },
     {
       "id": "LOG-1792072177841",
       "timestamp": "2026-10-15T13:49:37.841Z",
