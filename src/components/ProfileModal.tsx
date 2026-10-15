@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Shield, MapPin, Phone, Award, Globe, Wifi, WifiOff, X, BookOpen, Battery } from 'lucide-react';
+import { User, Shield, MapPin, Phone, Award, Globe, Wifi, WifiOff, X, BookOpen, Battery, LogOut } from 'lucide-react';
 import { UserRole, SupportedLanguage } from '../types';
 import { TRANSLATIONS } from '../locales/translations';
 
@@ -13,6 +13,7 @@ interface ProfileModalProps {
   isSimulatedOffline: boolean;
   onToggleOffline: () => void;
   onOpenDemoGuide: () => void;
+  onSignOut?: () => void;
 }
 
 export const ProfileModal: React.FC<ProfileModalProps> = ({
@@ -24,7 +25,8 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
   onLanguageChange,
   isSimulatedOffline,
   onToggleOffline,
-  onOpenDemoGuide
+  onOpenDemoGuide,
+  onSignOut
 }) => {
   if (!isOpen) return null;
   const t = TRANSLATIONS[language];
@@ -170,6 +172,19 @@ export const ProfileModal: React.FC<ProfileModalProps> = ({
             </span>
             <span>→</span>
           </button>
+
+          {onSignOut && (
+            <button
+              onClick={() => {
+                onClose();
+                onSignOut();
+              }}
+              className="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-rose-950/60 border border-rose-800/80 text-rose-300 hover:bg-rose-900 transition-colors font-semibold"
+            >
+              <LogOut className="w-4 h-4" />
+              <span>Sign Out to Login Screen</span>
+            </button>
+          )}
         </div>
 
         <button
